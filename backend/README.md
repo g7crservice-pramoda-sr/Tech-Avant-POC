@@ -1,4 +1,4 @@
-# tech-avant-backend
+# Tech-avant-backend
 
 ## Run with uv
 
