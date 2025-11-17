@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from fastapi.responses import RedirectResponse
+from fastapi.responses import JSONResponse
 
 
 root_route = APIRouter(tags=["Root"])
@@ -10,4 +10,4 @@ async def fn_test():
     """
     Pings to test if fastapi is running
     """
-    return RedirectResponse("/docs")
+    return JSONResponse({"message": "success"})
