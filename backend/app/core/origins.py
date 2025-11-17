@@ -4,6 +4,7 @@ from fastapi.middleware import Middleware
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.api.root.connector import root_route
+from app.api.auth.connector import auth_route
 
 origins = ["*"]
 
@@ -23,3 +24,4 @@ def make_middleware() -> List[Middleware]:
 
 def init_routers(app_: FastAPI) -> None:
     app_.include_router(root_route)
+    app_.include_router(auth_route)
