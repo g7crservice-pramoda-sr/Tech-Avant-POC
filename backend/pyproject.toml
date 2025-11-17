@@ -1,0 +1,14 @@
+[project]
+name = "tech_avant_backend"
+version = "0.1.0"
+description = "FastAPI server for tech-avant-backend - G7CR"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.116.2",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.13.1",
+]
